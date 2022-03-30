@@ -27,9 +27,12 @@ def app():
         st.write("House ID:001")
         page = Data_etl
         page.dustbindata()
+    
     if db == 'Location':
         page = Data_etl
         page.location()
+    db = st.sidebar.radio('View OVerall Bin',['Analytics','GarbageCollection'])
+
     if db == 'Analytics':
         page = analytics
         page.analytics()
