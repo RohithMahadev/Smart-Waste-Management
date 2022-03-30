@@ -31,12 +31,13 @@ def app():
     if db == 'Location':
         page = Data_etl
         page.location()
-    db = st.sidebar.radio('View OVerall Bin',['Analytics','GarbageCollection'])
 
-    if db == 'Analytics':
+    db1 = st.sidebar.radio('View OVerall Bin',['Analytics','GarbageCollection'])
+
+    if db1 == 'Analytics':
         page = analytics
         page.analytics()
-    if db == 'GarbageCollection':
+    if db1 == 'GarbageCollection':
         page = prediction
         page.pred()
 
