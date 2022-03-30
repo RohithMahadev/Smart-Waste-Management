@@ -11,7 +11,7 @@ import analytics
 def app():
     st.header('Municipality Smart Waste Management System')
 
-    db = st.sidebar.radio('View BIN 1',['Dashboard','Table','Dustbin Data','Location','Analytics','GarbageCollection'])
+    db = st.sidebar.radio('View',['Dashboard','Table','Dustbin Data','Location','Analytics','GarbageCollection'])
 
   
     if db =='Dashboard':
@@ -31,13 +31,10 @@ def app():
     if db == 'Location':
         page = Data_etl
         page.location()
-
-    db1 = st.sidebar.radio('View OVerall Bin',['Analytics','GarbageCollection'])
-
-    if db1 == 'Analytics':
+    if db == 'Analytics':
         page = analytics
         page.analytics()
-    if db1 == 'GarbageCollection':
+    if db == 'GarbageCollection':
         page = prediction
         page.pred()
 
