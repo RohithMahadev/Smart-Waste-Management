@@ -2,9 +2,9 @@
 showPyplotGlobalUse = false
 
 [theme]
-primaryColor="#143fff"
-backgroundColor="#9fbaef"
-secondaryBackgroundColor="#91a1f5"
-textColor="#0c0c0c"
-
+primaryColor = "F36295"
+backgroundColor = "#F0FF33"
+secondaryBackgroundColor = "#3183D1"
+textColor = "#03080C"
+font = "sans-serif"
 
